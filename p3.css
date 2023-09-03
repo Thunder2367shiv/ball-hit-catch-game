@@ -1,0 +1,115 @@
+*{
+    margin:1px;
+    padding:0;
+    background-color:cadetblue;
+}
+#game_title{
+    text-align: center;
+    border:5px solid black;
+    box-sizing:content-box;
+    margin-left: 35%;
+    margin-right: 35%;
+    font-size: 60px;
+    border-radius: 10px;
+    background-color: rgb(214, 195, 170);
+}
+#count_hit{
+    position: absolute;
+    top: 9px;
+    right:0px;
+    font-size: 50px;
+    font-weight: 800;
+    border:5px solid black;
+    background-color: rgb(156, 154, 29);
+    border-radius: 10px;
+    padding:2px;
+    padding-right: 10px;
+}
+#count_miss{
+    position: absolute;
+    top: 90px;
+    right:0px;
+    font-size: 50px;
+    border:5px solid black;
+    background-color: rgb(195, 36, 36);
+    font-weight: 800;
+    border-radius: 10px;
+    padding:2px;
+    padding-right: 10px;
+}
+
+.game-container{
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+    width:90vmin;
+    margin-left: 25%;;
+    height: 70vmin;
+    display: flex;
+    border:5px solid rgb(6, 100, 100);
+    background:linear-gradient(rgb(11, 53, 53), rgb(14, 22, 43), rgb(20, 8, 35) );
+}
+
+footer{
+    text-align: left;
+}
+#game_stop{
+    position: absolute;
+    top: 90px;
+    left:0px;
+    font-size: 50px;
+    border:5px solid black;
+    background-color: rgb(195, 36, 36);
+    font-weight: 800;
+    border-radius: 10px;
+    padding:2px;
+    padding-right: 10px;
+}
+#mouse {
+    width: 60px;
+    height: 60px;
+    background-color: blue;
+    border: 3px solid black;
+    position: relative;
+    border-radius: 50px;
+    top: 30%;
+    left: 40%;
+    animation : 5s 0s infinite alternate-reverse none running circlemove;
+}
+@keyframes circlemove {
+    0% {
+        top: 8rem;
+        left: 0rem;
+    }
+
+    15% {
+        top: 10rem;
+        left: 15rem;
+    }
+
+    30% {
+        top: -2rem;
+        left: 3rem;
+    }
+
+    45% {
+        top: 8em;
+        left: 1em;
+    }
+
+    60% {
+        top: -5rem;
+        left: 1rem;
+    }
+    75% {
+        top: 10em;
+        left: 3em;
+    }
+
+    90% {
+        top: 4rem;
+        left: 6rem;
+    }
+
+}
+
